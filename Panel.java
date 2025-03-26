@@ -40,12 +40,16 @@ public class Panel extends JPanel {
       t = t * omega / new_omega;
     omega = new_omega;
   }
-  public void plus_cb(int o) {
-    A_plus = (double)o / N;
+  public void plus_cb(int i) {
+    A_plus = (double)i / N;
   }
-  public void cross_cb(int o) {
-    A_cross = (double)o / N;
+  public void cross_cb(int i) {
+    A_cross = (double)i / N;
   }
+  public void radius_cb(int r) {
+    R = (double)r;
+  }
+
   @Override
   protected void paintComponent(Graphics g) {
     super.paintComponent(g);
